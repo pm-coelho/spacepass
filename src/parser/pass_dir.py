@@ -23,12 +23,12 @@ class PassDir(Node):
     def add_file(self, path, name):
         if (name[0] == '.'): return
         file_name = splitext(name)[0]
-        self.files.append(PassFile('{}/{}'.format(path, file_name), name, self.gen_shortcut(file_name)))
+        self.files.append(PassFile(join(path, file_name), name, self.gen_shortcut(file_name)))
 
 
     def add_dir(self, path, name):
         if(name[0] == '.'): return
-        self.dirs.append(PassDir(path, '{}/{}'.format(path, name), name))
+        self.dirs.append(PassDir(path,join(path, name), name))
 
 
     def gen_shortcut(self, name):
@@ -46,4 +46,4 @@ class PassDir(Node):
 
 
     def get_used_shortcuts(self):
-        return map(lambda x: x._shortcut, self.files + self.dirs + [self])
+        return map(lambda x: x.shortcut, self.files + self.dirs + [self])
