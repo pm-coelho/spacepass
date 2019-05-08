@@ -5,18 +5,18 @@ def readme():
         return f.read()
 
 setup(
-    name='passmacs',
+    name='spacepass',
     version='0.1',
     author='pmcoelho',
     author_email='pmcoelho@protonmail.com',
-    url='https://github.com/pm-coelho/passmacs',
+    url='https://github.com/pm-coelho/spacepass',
     description='A spacemacs inspired menu for password store',
     long_description=readme(),
     license='GPLv3+',
-    packages=find_packages(),
+    packages=find_packages(exclude=('test')),
     include_package_data=True,
-    install_requires=[],
+    install_requires=['spacemenu'],
     entry_points={
-        'console_scripts': ['passmacs=src.run:main']
+        'console_scripts': ['spacepass=spacepass.run:main']
     }
 )
