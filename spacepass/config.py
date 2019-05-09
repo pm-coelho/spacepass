@@ -15,10 +15,10 @@ class Config:
         config.add_argument('-p','--pass-dir', help='Path for the password-store repository')
 
         config.add_argument('--margin', help='inner margin for the window')
-        config.add_argument('--column-spacing', help='Column gutter size')
-        config.add_argument('--row-spacing', help='Row gutter size')
+        config.add_argument('--column-spacing', help='Spacing between each column')
+        config.add_argument('--row-spacing', help='Spacing between each row')
         config.add_argument('--max-columns', help='Maximum number of columns to display')
-        config.add_argument('--row-height', help='The size for each row')
+        config.add_argument('--row-height', help='The size for the buttons in each row')
 
         self._config = config
 
