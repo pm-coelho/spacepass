@@ -1,8 +1,10 @@
+import os
 from .parser.pass_root import PassRoot
 from .gui.dir_window import DirWindow
+from .config import Config
 
 def main():
-    pass_dir = '/home/enemabandit/.password-store'
-    content = PassRoot(pass_dir)
-    window = DirWindow(pass_dir, content)
+    options = Config().parse()
+    content = PassRoot(options['pass_dir'])
+    window = DirWindow(options['pass_dir'], content, options)
     window.draw()

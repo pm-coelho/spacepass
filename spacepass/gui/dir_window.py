@@ -2,9 +2,9 @@ from spacemenu.window import Window
 
 # TODO: read options from config
 class DirWindow():
-    def __init__(self, pass_dir, content):
+    def __init__(self, pass_dir, content, options):
         self.pass_dir = pass_dir
-        self._root_window = Window(self._parse_content(content))
+        self._root_window = Window(self._parse_content(content), options)
 
 
     def _parse_content(self, content):

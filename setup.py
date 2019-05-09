@@ -15,7 +15,7 @@ setup(
     license='GPLv3+',
     packages=find_packages(exclude=('test')),
     include_package_data=True,
-    install_requires=['spacemenu'],
+    install_requires=['spacemenu', 'ConfigArgParse'],
     entry_points={
         'console_scripts': ['spacepass=spacepass.run:main']
     }
