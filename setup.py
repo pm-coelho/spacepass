@@ -10,7 +10,7 @@ setup(
     author='pmcoelho',
     author_email='pmcoelho@protonmail.com',
     url='https://github.com/pm-coelho/spacepass',
-    description='A spacemacs inspired menu for password store',
+    description='A spacemacs inspired menu for pass password store',
     long_description=readme(),
     long_description_content_type="text/markdown",
     license='GPLv3+',

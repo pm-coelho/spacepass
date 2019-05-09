@@ -9,21 +9,32 @@ It was designed to be used in i3wm but should work on another DE/WM
 gtk-3.0
 
 ## Installation
+
+Install for your user (make sure ~/.local/bin is included in PATH):
 ```bash
-pip install spacepass
+pip install --user spacepass
+```
+
+Globally install:
+```bash
+sudo pip install spacepass
 ```
 
 ## Usage
 ### i3wm
 bindsym the desired
 ```
-bindsym $mod+Shift+p exec spacepass
+bindsym $mod+p exec spacepass
 ```
 
 ## Configuration
 Configuration is read from the config file 
 
 ## TODO
+  * allow different colours
+  * give option to show the password contents (multiline)
+  * allow to create/update/delete passwords from the ui
+  * implement search
 
 
 ## License
