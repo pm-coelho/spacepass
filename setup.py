@@ -6,17 +6,27 @@ def readme():
 
 setup(
     name='spacepass',
-    version='0.1',
+    version='0.1a1',
     author='pmcoelho',
     author_email='pmcoelho@protonmail.com',
     url='https://github.com/pm-coelho/spacepass',
-    description='A spacemacs inspired menu for password store',
+    description='A spacemacs(menu) inspired menu for password store',
     long_description=readme(),
+    long_description_content_type="text/markdown",
     license='GPLv3+',
     packages=find_packages(exclude=('test')),
     include_package_data=True,
     install_requires=['spacemenu', 'ConfigArgParse'],
     entry_points={
         'console_scripts': ['spacepass=spacepass.run:main']
-    }
+    },
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Environment :: X11 Applications',
+        'Environment :: X11 Applications :: GTK',
+        'Intended Audience :: End Users/Desktop',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Operating System :: POSIX :: Linux',
+        'Topic :: Security'
+    ]
 )

@@ -1,2 +1,6 @@
 spacepass-env
 **/__pycache__
+build
+dist
+spacepass.egg-info
+.#*
