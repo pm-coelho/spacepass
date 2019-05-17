@@ -14,7 +14,7 @@ class Config:
 
         config.add_argument('-p','--pass-dir',type=str, help='Path for the password-store repository')
 
-        config.add_argument('--margin', type=int, help='Inner margin for the window')
+        config.add_argument('--inner-margin', type=int, help='Inner margin for the window (px)')
         config.add_argument('--column-spacing', type=int,  help='Spacing between each column')
         config.add_argument('--row-spacing', type=int, help='Spacing between each row')
         config.add_argument('--max-columns', type=int, help='Maximum number of columns to display')
