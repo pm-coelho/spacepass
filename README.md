@@ -33,16 +33,9 @@ Try 'spacepass -h' for details
 ### options
   * config: path to the config file (defaults to $XDG_CONFIG_HOME/spacepass/config)
   * pass-dir: path to the password repository (defaults to $HOME/.password-store**
-
-### GUI options
-  * margin: Inner margin for the window
-  * column-spacing: Spacing between each column
-  * row-spacing: Spacing between each row
-  * max-columns: Maximum number of columns to display
-  * row-height: The height of the buttons in each row
+  * see docs/default.config for more
 
 ## TODO
-  * allow different colours
   * give option to show the password contents (multiline)
   * allow to create/update/delete passwords from the ui
   * implement search
