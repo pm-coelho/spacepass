@@ -22,6 +22,7 @@ class Config:
         config.add_argument('--background-color',type=str, help='The color for the window background (rrggbb)')
         config.add_argument('--button-background-color', type=str, help='The color for the button background (rrggbb)')
         config.add_argument('--button-text-color', type=str, help='The color for the text of the buttons(rrggbb)')
+        config.add_argument('--font', type=str, help='')
 
         self._config = config
 
