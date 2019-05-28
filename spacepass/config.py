@@ -24,7 +24,7 @@ class Config:
         config.add_argument('--row-spacing', type=int, help='Spacing between each row')
         config.add_argument('--max-columns', type=int, help='Maximum number of columns to display')
         config.add_argument('--row-height', type=int, help='The size for the buttons in each row')
-        config.add_argument('--font', type=str, help='')
+        config.add_argument('--font', type=str, help='Font to be used by the labels')
 
         #COLORS
         config.add_argument('--background-color',type=str, help='The color for the window background (rrggbb)')
