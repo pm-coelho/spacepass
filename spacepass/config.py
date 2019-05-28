@@ -33,7 +33,31 @@ class Config:
             type=str,
             help='The color for the button background (rrggbb)'
         )
-        config.add_argument('--button-text-color', type=str, help='The color for the text of the buttons(rrggbb)')
+        config.add_argument(
+            '--button-text-color',
+            type=str,
+            help='The color for the text of the buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--branch-background-color',
+            type=str,
+            help='The color for the branch button background (rrggbb)'
+        )
+        config.add_argument(
+            '--branch-text-color',
+            type=str,
+            help='The color for the text of the branch buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--leaf-background-color',
+            type=str,
+            help='The color for the leaf button background (rrggbb)'
+        )
+        config.add_argument(
+            '--leaf-text-color',
+            type=str,
+            help='The color for the text of the leaf buttons(rrggbb)'
+        )
 
         self._config = config
 
