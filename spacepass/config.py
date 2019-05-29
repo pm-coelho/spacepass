@@ -28,6 +28,7 @@ class Config:
 
         #COLORS
         config.add_argument('--background-color',type=str, help='The color for the window background (rrggbb)')
+
         config.add_argument(
             '--button-background-color',
             type=str,
@@ -38,6 +39,7 @@ class Config:
             type=str,
             help='The color for the text of the buttons(rrggbb)'
         )
+
         config.add_argument(
             '--branch-background-color',
             type=str,
@@ -49,6 +51,22 @@ class Config:
             help='The color for the text of the branch buttons(rrggbb)'
         )
         config.add_argument(
+            '--branch-text-shortcut-color',
+            type=str,
+            help='The color for the text of the branch shortcut on buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--branch-text-separator-color',
+            type=str,
+            help='The color for the text of the branch separator on buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--branch-text-label-color',
+            type=str,
+            help='The color for the text of the branch label on buttons(rrggbb)'
+        )
+
+        config.add_argument(
             '--leaf-background-color',
             type=str,
             help='The color for the leaf button background (rrggbb)'
@@ -57,6 +75,21 @@ class Config:
             '--leaf-text-color',
             type=str,
             help='The color for the text of the leaf buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--leaf-text-shortcut-color',
+            type=str,
+            help='The color for the text of the leaf shortcut on buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--leaf-text-separator-color',
+            type=str,
+            help='The color for the text of the leaf separator on buttons(rrggbb)'
+        )
+        config.add_argument(
+            '--leaf-text-label-color',
+            type=str,
+            help='The color for the text of the leaf label on buttons(rrggbb)'
         )
 
         self._config = config
